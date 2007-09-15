@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - DocBlock Generator
 Summary(pl.UTF-8):	%{_pearname} - generator DocBlock
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
+Version:	1.1.1
 Release:	1
 License:	The BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	3eb02259f5e26d38e91b18b505146109
+# Source0-md5:	aef1de207fb0f11df4279a83314e1bc6
 URL:		http://pear.php.net/package/PHP_DocBlockGenerator/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
