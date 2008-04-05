@@ -49,8 +49,8 @@ plików, zmiennych globalnych, funkcji, parametrów, klas, stałych,
 składników oraz metod.
 
 Za pomocą parametrów możliwe jest określenie nazwy kategorii, pakietu,
-nazwiska oraz adresu e-mail autora, licencji, adresu pakietu, itd.
-Pakiet próbuje odgadną domyślne wartości.
+nazwiska oraz adresu e-mail autora, licencji, adresu pakietu itd.
+Pakiet próbuje odgadnąć domyślne wartości.
 
 Pakiet ten może także wyrównać istniejące znaczniki DocBlock.
 
