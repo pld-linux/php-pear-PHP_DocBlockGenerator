@@ -17,7 +17,6 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Console_Getopt
-Requires:	php-pear-PEAR >= 1.4.0
 Requires:	php-pear-PHP_CompatInfo
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
