@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		PHP
-%define		_subclass	DocBlockGenerator
 %define		_status		stable
 %define		_pearname	PHP_DocBlockGenerator
 Summary:	%{_pearname} - DocBlock Generator
 Summary(pl.UTF-8):	%{_pearname} - generator DocBlock
 Name:		php-pear-%{_pearname}
 Version:	1.1.1
-Release:	3
+Release:	4
 License:	The BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	aef1de207fb0f11df4279a83314e1bc6
 URL:		http://pear.php.net/package/PHP_DocBlockGenerator/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Console_Getopt
@@ -68,9 +66,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
