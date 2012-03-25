@@ -1,19 +1,19 @@
+%define		status		stable
+%define		pearname	PHP_DocBlockGenerator
 %include	/usr/lib/rpm/macros.php
-%define		_status		stable
-%define		_pearname	PHP_DocBlockGenerator
-Summary:	%{_pearname} - DocBlock Generator
-Summary(pl.UTF-8):	%{_pearname} - generator DocBlock
-Name:		php-pear-%{_pearname}
-Version:	1.1.1
-Release:	5
+Summary:	%{pearname} - DocBlock Generator
+Summary(pl.UTF-8):	%{pearname} - generator DocBlock
+Name:		php-pear-%{pearname}
+Version:	1.1.2
+Release:	1
 License:	The BSD License
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	aef1de207fb0f11df4279a83314e1bc6
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	212439acef0833acbf6d9cf3e7856594
 URL:		http://pear.php.net/package/PHP_DocBlockGenerator/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-pear
 Requires:	php-pear-Console_Getopt
 Requires:	php-pear-PHP_CompatInfo
@@ -40,7 +40,7 @@ or by running the "docblockgen" DOS/Unix command.
 
 Fully tested with phpUnit. Code coverage test close to 100%.
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 Pakiet ten tworzy blok strony oraz bloki DocBlock dla dołączanych
@@ -62,10 +62,13 @@ Z pakietu można skorzystać na dwa sposoby - wywołując klasę
 Pakiet został w pełni przetestowany za pomocą phpUnit. Pokrycie kodu
 bliskie 100%..
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
+
+# common licenses
+rm -r ./usr/share/pear/data/PHP_DocBlockGenerator/licenses
 
 %install
 rm -rf $RPM_BUILD_ROOT
