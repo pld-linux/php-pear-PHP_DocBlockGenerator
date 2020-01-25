@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHP_DocBlockGenerator
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - DocBlock Generator
 Summary(pl.UTF-8):	%{pearname} - generator DocBlock
 Name:		php-pear-%{pearname}
